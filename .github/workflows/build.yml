@@ -1,8 +1,8 @@
 name: build
 on:
   push:
-    paths-ignore:
-      - "*.md"
+    tags:
+      - 'v*'
 jobs:
   build:
     runs-on: windows-latest
